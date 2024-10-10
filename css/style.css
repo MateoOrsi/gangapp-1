@@ -1,0 +1,626 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.boton{
+    background-color: rgb(252, 103, 54);
+    color: rgb(4, 20, 41);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+.boton:hover{
+    background-color: rgb(32, 8, 0);
+    color: rgb(255, 255, 255);
+}
+
+h3{ 
+    color: rgb(4, 20, 41) !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+}
+
+iframe{
+    height: 900px;
+    width: 100%;
+}
+/*--------HEADER--------*/
+header{
+    background-color: rgb(252, 103, 54);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 15;
+}
+
+header nav ul{
+    list-style: none;
+}
+header a img{
+    height: 80px;
+    width: 80px;
+    margin:15px;
+}
+.nav-bar{
+    background-color: rgb(252, 103, 54);
+}
+.navbar-nav .nav-item{
+    color: rgb(4, 20, 41) !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-weight: 900 !important;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+/*------MAIN-------*/
+
+.hero{
+    text-align: center;
+    height: 800px;
+    background-image: url("../img/fondo-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: rgba(4, 20, 41, 0.596);
+    background-blend-mode:overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img{
+    height: 120px;
+    width: 120px;
+}
+.hero h1{
+    color:rgb(252, 103, 54);
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+.hero h2{
+    margin-bottom: 30px;
+    margin-top: 5px;
+    color:rgb(252, 103, 54);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:400;
+    font-size: 25;
+}
+
+/*,,,,,,,,BIENVENIDOS,,,,,,,,*/
+
+.bienvenidos img{
+    height: 800px;
+    width: 550px;
+}
+.bienvenidos{
+    display: flex;
+    justify-content: space-around;
+}
+.bienvenidos div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    justify-content: center;
+}
+.bienvenidos div h2{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 45px;
+}
+.bienvenidos div p{
+    color: rgb(4, 20, 41);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/*------FUNCIONES-------*/
+
+.subgrupo h2{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 45px;
+
+}
+.imagen{
+    height: 800px;
+    width: 550px;
+}
+.subgrupo div img{
+    height: 70px;
+    width: 70px;
+}
+.subgrupo div h3{
+    display: inline-block;
+    align-content: center;
+    margin-left: 20px;
+}
+.grupo{
+    display: flex;
+    justify-content: space-around;
+}
+.subgrupo{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+}
+.subgrupo div{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* ALGUNOS DESCUENTOS*/
+
+.dtos h2{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin: 55px;
+    text-align: center;
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.tarjetas div img{
+    height: 220px;
+    width: 220px;
+    align-content: center;
+}
+.tarjetas div h3{
+    display: inline-block;
+}
+.tarjetas div{
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(252, 103, 54);
+    height:300px;
+    width: 220px;
+    align-content: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.tarjetas div h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*------DESCARGAR-------*/
+
+#descargar{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#descargar div h2{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+#descargar div{
+    width: 50%;
+    align-content: center;
+}
+
+/*-----MAPA------*/
+
+.pantallaiframe div h1{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    margin-bottom: 15PX;
+    text-align: center;
+}
+.pantallaiframe div h2{
+    color: rgb(4, 20, 41) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+
+}
+.pantallaiframe div{  
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*------DESCUENTOS------*/
+
+.descuentostitle{
+    height:400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.descuentostitle h1{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.descuentostitle h2{
+    color: rgb(4, 20, 41) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.descuentostarjetas h2{
+    text-align: center;
+    color: white;
+    background-color:rgb(252, 103, 54) ;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 20px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.descuentostarjetas .tarjetas{
+    margin-bottom: 45px;
+}
+.carousel-width{
+    width: 100%;
+}
+
+/*------CONTACTO-------*/
+
+.contacto{
+    text-align: center;
+    height: 800px;
+    background-image: url("../img/imagen-contacto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: rgba(4, 20, 41, 0.596);
+    background-blend-mode:overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacto div div h1{
+    color:rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.contacto div div h2{
+    color: rgb(252, 103, 54) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin: 90px;
+    margin-top: 0px;
+}
+.contacto div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color:white;
+    padding: 15px;
+}
+.contacto div form input{
+    margin-bottom: 25px;
+}
+.contacto div form button{
+    color: rgb(252, 103, 54);
+    height: 20px;
+    margin-top: 25px;
+}
+
+/*------FOOTER------*/
+footer{
+    background-color: rgb(4, 20, 41);
+    height: auto;
+    padding: 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:190px;
+    gap: 10px;
+    grid-template-areas: 
+    "img-1 texto-1 redes"
+    "img-1 texto-1 redes"
+    ;
+}
+.img-1{
+    grid-area: img-1;
+}
+.texto-1{
+    grid-area: texto-1;
+    text-align: center;
+    align-self:center;
+}
+.redes i{
+    grid-area: redes;
+    font-size: 40px;
+    margin-left:30px;
+    text-align: center;
+}
+.footer-item  {
+    text-align: start;
+    padding: 20px;
+    font-size: 20px;
+    color: rgb(252, 103, 54);
+}
+.footer-item img{
+    height: 100%;
+    width: 60%;
+}
+.texto-1 ul{
+    list-style: none;
+    display: inline-block;
+}
+.texto-1 ul li a{
+    color: rgb(252, 103, 54);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+
+}
+.img-1{
+    align-self: center;
+}
+
+.texto-1 ul li{
+    margin-bottom: 7px;
+}
+
+/*-----CALENDARIO------*/
+
+.grid-container h2{
+    color:rgb(252, 103, 54);
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    grid-area: title;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:200px 350px 350px 350px 350px;
+    gap: 20px;
+    padding: 10px;
+    grid-template-areas:
+    "title title title"
+    "i-1 i-2 i-4"
+    "i-1 i-3 i-4"
+    "i-5 i-6 i-7"
+    ;
+}
+.grid-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.grid-item{
+    position: relative;
+}
+.i-1{
+    grid-area: i-1;
+}
+.i-4{
+    grid-area: i-4;
+}
+.i-6{
+    grid-area: i-6;
+}
+.grid-container h3{
+    color:white !important;
+    font-size: 20px !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    font-weight: 300;
+    text-align: center;
+    position: absolute;
+    border: bottom;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: auto;
+}
+
+/*------MEDIA QUERIES-------*/
+@media screen and (max-width: 1290px){
+    #descargar img{
+        width: 45%;
+        height: 45%
+    }
+}
+@media screen and (max-width: 1150px){
+    .bienvenidos img{
+        display: none;
+    }
+    .bienvenidos div{
+        width: 90%;
+        text-align: center;
+        margin: 40px;
+    }
+    }
+@media screen and (max-width: 1120px){
+    .grupo .imagen{
+        display: none;
+    }
+    .tarjetas{
+        margin: 15px;
+    }
+    .subgrupo{
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .subgrupo div{
+        width: 100%;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .subgrupo div img{
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width: 1000px){
+    #descargar img{
+        width: 35%;
+        height:35%;
+    }
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "texto-1 redes"
+        "texto-1 redes"
+        ;
+    }
+    .img-1{
+        display: none;
+    }
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "title title"
+        "i-1 i-2"
+        "i-3 i-4"
+        "i-5 i-6"
+        "i-7 i-6"
+        ;
+    }
+}
+@media screen and (max-width: 762px){
+    #descargar img{
+        display: none;
+    }
+    #descargar div{
+        margin-bottom: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #descargar div h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px !important;
+    }
+    h3{
+        font-size: 20px !important;
+    }
+    }
+@media screen and (max-width: 600px){
+    .footer-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 190px;
+        grid-template-areas:
+        "redes"
+        ;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "title"
+        "i-1"
+        "i-2"
+        "i-3"
+        "i-4"
+        "i-5"
+        "i-6"
+        "i-7"
+        ;
+    }
+    .texto-1{
+        display: none;
+    }
+    .texto-2{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+    h1{
+        font-size: 35px !important;
+    }
+    h2{
+        font-size: 25px !important;
+    }
+}
