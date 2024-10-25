@@ -1,0 +1,30 @@
+/*------VARIABLES------*/
+$color-principal:#fc6736;
+$color-secundario:#041429;
+
+/*------LISTA--------*/
+$margin: 15px, 20px, 30px, 40px, 55px, 0px;
+$padding: 5px, 10px, 15px, 20px, 0px;
+
+/*------EXTEND-------*/
+%boton{
+    background-color: $color-principal;
+    color: $color-secundario;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+    &:hover{
+        background-color: rgb(32, 8, 0);
+        color: rgb(255, 255, 255);
+}
+}
+
+/*------MIXIN-------*/
+@mixin size($height, $width){
+    height: $height;
+    width: $width;
+}

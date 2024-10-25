@@ -1,0 +1,156 @@
+@media screen and (max-width: 1290px) {
+    #descargar img {
+        width: 45%;
+        height: 45%
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .bienvenidos img {
+        display: none;
+    }
+
+    .bienvenidos div {
+        width: 90%;
+        text-align: center;
+        margin: 40px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .grupo .imagen {
+        display: none;
+    }
+
+    .tarjetas {
+        margin: 15px;
+    }
+
+    .grupo .subgrupo {
+        width: 90%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .grupo .subgrupo div {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .grupo.subgrupo div img {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #descargar img {
+        width: 35%;
+        height: 35%;
+    }
+
+    footer .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "texto-1 redes"
+            "texto-1 redes"
+        ;
+    }
+
+    .img-1 {
+        display: none;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "i-1 i-2"
+            "i-3 i-4"
+            "i-5 i-6"
+            "i-7 i-6"
+        ;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    #descargar img {
+        display: none;
+    }
+
+    #descargar div {
+        margin-bottom: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #descargar div h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .pantallaiframe div h2{
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer .footer-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: 190px;
+        grid-template-areas:
+            "redes"
+        ;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "i-1"
+            "i-2"
+            "i-3"
+            "i-4"
+            "i-5"
+            "i-6"
+            "i-7"
+        ;
+    }
+
+    .texto-1 {
+        display: none;
+    }
+
+    .texto-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 35px !important;
+    }
+    .pantallaiframe div h2{
+        font-size: 18px !important;
+    }
+    h2 {
+        font-size: 25px !important;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .contacto div div h2{
+        font-size: 18px !important;
+    }
+}

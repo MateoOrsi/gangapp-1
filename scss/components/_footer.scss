@@ -1,0 +1,54 @@
+footer{
+    background-color: rgb(4, 20, 41);
+    height: auto;
+    padding: nth($list: $padding, $n:4 );
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:190px;
+        gap: 10px;
+        grid-template-areas: 
+        "img-1 texto-1 redes"
+        "img-1 texto-1 redes"
+        ;
+        .img-1{
+            grid-area: img-1;
+            text-align: start;
+            align-self: center;
+            img{
+                @include size (100%, 60%)
+            }
+        }
+        .texto-1{
+            grid-area: texto-1;
+            text-align: start;
+            align-self:center;
+            padding: nth($list: $padding, $n:4 );
+            font-size: 20px;
+            color: rgb(252, 103, 54);
+            ul{
+                list-style: none;
+                display: inline-block;
+                li{
+                    margin-bottom: 7px;
+                    a{
+                        color: $color-principal;
+                        font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        font-size: 20px;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+        .redes{
+            i{
+                grid-area: redes;
+                font-size: 40px;
+                margin-left:30px;
+                text-align: center;
+                align-self: center;
+                color: $color-principal;
+            }
+        }
+    }
+}

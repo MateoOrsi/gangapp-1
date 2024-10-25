@@ -1,0 +1,311 @@
+/*-----INDEX------*/
+.hero{
+    text-align: center;
+    height: 800px;
+    background-image: url("../img/fondo-hero.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: #04142996;
+    background-blend-mode:overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+        @include size (120px, 120px)
+    }
+    H1{
+        color:$color-principal;
+        font-size: 60px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: normal;
+        font-weight: 900;
+    }
+    h2{
+        color: $color-principal;
+        margin-bottom: 30px;
+        margin-top: 5px;
+        font-weight:500;
+        font-size: 25px;
+    }
+}
+.bienvenidos{
+    display: flex;
+    justify-content: space-around;
+    img{
+        @include size (800px, 550px)
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-content: center;
+        justify-content: center;
+        h2{
+            color: $color-principal;
+            font-weight: 900;
+            margin-bottom: 45px;
+        }
+        p{
+            color: $color-secundario;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+}
+.funciones{
+    .grupo{
+        display: flex;
+        justify-content: space-around;
+        .subgrupo{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            width: 50%;
+            h2{
+                color:$color-principal;
+                font-weight: 900;
+                margin-bottom: 45px;
+            }
+            div{
+                display: flex;
+                justify-content: left;
+                align-content: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                img{
+                    @include size (70px, 70px);
+                    margin-bottom: 15px;
+                }
+                h3{
+                    display: inline-block;
+                    align-content: center;
+                }
+            }
+        }
+        .imagen{
+            @include size (800px, 550px)
+        }
+    }
+}
+.dtos{
+    h2{
+        color:$color-principal;
+        font-weight: 900;
+        margin: nth($list: $margin, $n: 5);
+        text-align: center;
+    }
+}
+.tarjetas{ 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    div{
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-radius: 20px;
+        border-color: $color-principal;
+        height:300px;
+        width: 220px;
+        align-content: center;
+        padding: nth($list: $padding, $n: 2);
+        margin-bottom: 20px;
+        margin-left: 15px;
+        img{
+            @include size (220px, 220px);
+            align-content: center;
+        }
+        h3{
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}
+#descargar{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    div{
+        width: 50%;
+        align-content: center;
+        h2{
+            font-weight: 900;
+            margin-bottom: 50px;}
+    }
+}
+
+/*-------MAPA-------*/
+
+.pantallaiframe{
+    div{
+        height:200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h1{
+            color:$color-principal;
+            font-size: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 900;
+            margin-bottom: 15PX;
+            text-align: center;
+        }
+        h2{
+            color: $color-secundario ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}
+
+/*-------DESCUENTOS------*/
+
+.descuentos{
+    .descuentostarjetas{
+        h2{
+            text-align: center ;
+            color: white ;
+            background-color: $color-principal ;
+            font-size: 25px ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 40px;
+            width: 100%;
+            padding: nth($list: $padding, $n: 4 );
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .tarjetas{
+            margin-bottom: 45px;
+        }
+    }
+}
+.carousel-width{
+    width: 100%;
+}
+
+/*-----CONTACTO------*/
+
+.contacto{
+    text-align: center;
+    height: 800px;
+    background-image: url("../img/imagen-contacto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    background-color: rgba(4, 20, 41, 0.596);
+    background-blend-mode:overlay;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div{
+        div{
+            h1{
+                color:rgb(255, 255, 255);
+                font-size: 50px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-style: normal;
+                font-weight: 900;
+                margin-bottom: 15px;
+                text-align: center;
+            }
+            h2{
+                color: $color-principal ;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 25px;
+                font-weight: 600;
+                text-align: center;
+                margin: nth($list: $margin, $n:1 );
+                margin-bottom: 90px;
+                margin-top: 0px;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            color:white;
+            padding: nth($list: $padding, $n: 3);
+            input{
+                margin-bottom: 25px;
+            }
+            button{
+                color: $color-principal;
+                height: 20px;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+/*-----CALENDARIO------*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:200px 350px 350px 350px 350px;
+    gap: 20px;
+    padding: nth($list: $padding, $n:2);
+    grid-template-areas:
+    "title title title"
+    "i-1 i-2 i-4"
+    "i-1 i-3 i-4"
+    "i-5 i-6 i-7"
+    ;
+    h2{
+        color:$color-principal;
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 900;
+        
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        grid-area: title;
+    }
+    .grid-item{
+        position: relative;
+        img{
+            @include size (100%, 100%);
+            object-fit: cover;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        h3{color:white !important;
+            font-size: 20px !important;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding:nth($list: $padding, $n:1 );
+            font-weight: 300;
+            text-align: center;
+            position: absolute;
+            border: bottom;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.616);
+            width: auto;}
+    }
+}
+.i-1{
+    grid-area: i-1;
+}
+.i-4{
+    grid-area: i-4;
+}
+.i-6{
+    grid-area: i-6;
+}

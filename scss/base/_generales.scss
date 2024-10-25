@@ -1,0 +1,26 @@
+*{
+    margin: nth($list: $margin, $n:6 );
+    padding: nth($list: $padding, $n: 5);
+    box-sizing: content-box !important;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    color:$color-principal;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+}
+h3{
+    color: $color-secundario;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 600 !important;
+}
+iframe{
+    @include size (900px, 100%)
+}
+.boton{
+    @extend %boton;
+}
