@@ -105,6 +105,7 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
     box-sizing: border-box;
+    
     div{
         display: flex;
         flex-direction: column;
@@ -117,7 +118,6 @@
         padding: nth($list: $padding, $n: 2);
         margin-bottom: 20px;
         margin-left: 15px;
-        transition: 1s;
         img{
             @include size (220px, 220px);
             align-content: center;
@@ -127,9 +127,6 @@
             text-align: center;
             margin-bottom: 10px;
         }
-        &:hover{
-            transform: scale(1.2);
-    }
     }
 }
 #descargar{
